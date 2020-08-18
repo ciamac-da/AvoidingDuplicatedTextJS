@@ -122,16 +122,17 @@ console.log(myUniquesArray);
 
 var p = document.createElement("p");
 p.style.fontWeight ="bold",
-p.style.color ="gray",
+p.style.color ="white",
 p.style.fontSize ="25px",
 p.style.display ="flex",
 p.style.backgroundColor ="red",
 p.style.justifyContent ="center",
 p.style.textAlign ="center"
 
-p += myUniquesArray;
-
+p.innerText = myUniquesArray
+//myUniquesArray += p
 document.body.append(p)
+document.body.style.backgroundColor ="orange"
 console.log(p) 
 
 
